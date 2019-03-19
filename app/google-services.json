@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "738778794515",
+    "firebase_url": "https://medic-e3804.firebaseio.com",
+    "project_id": "medic-e3804",
+    "storage_bucket": "medic-e3804.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738778794515:android:5531f43229e77ba2",
+        "android_client_info": {
+          "package_name": "com.example.balag.finalmain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738778794515-jmd0pvmaurljqk48uitbbpvb5huu9dte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.balag.finalmain",
+            "certificate_hash": "c1203b9c8976d95762ed012eb178276dd61ddb2c"
+          }
+        },
+        {
+          "client_id": "738778794515-rojifua46dn8l8bs9kfqnj464q0d8rn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP9MEq0kgMvLgBN7VKGNVw1crUNW5KVnM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738778794515-rojifua46dn8l8bs9kfqnj464q0d8rn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
