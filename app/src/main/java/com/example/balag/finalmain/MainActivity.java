@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -100,12 +101,43 @@ return super.onOptionsItemSelected(item);
             startActivity(new Intent(MainActivity.this, MapsActivity.class));
 
         }else if (id == R.id.nav_share) {
-            //startActivity(new Intent(MainActivity.this, medicsearch.class));
+            int val=3;
+            Intent intent4=new  Intent(MainActivity.this,MapsActivity1.class);
+            intent4.putExtra("val",val);
+            startActivity(intent4);
         } else if (id == R.id.nav_send) {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("message/rfc822");
+            i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"recipient@example.com"});
+            i.putExtra(Intent.EXTRA_SUBJECT, "subject of email");
+            i.putExtra(Intent.EXTRA_TEXT   , "body of email");
+            try {
+                startActivity(Intent.createChooser(i, "Send mail..."));
+            } catch (android.content.ActivityNotFoundException ex) {
+                Toast.makeText(MainActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+            }
 
         } else if (id == R.id.nav_slideshow) {
+            int val=4;
+            Intent intent4=new Intent(MainActivity.this,MapsActivity1.class);
+            intent4.putExtra("val",val);
+            startActivity(intent4);
 
-        } else if (id == R.id.nav_manage3) {
+        }else if (id == R.id.nav_manage2) {
+
+            int val=1;
+            Intent intent3=new Intent(MainActivity.this,MapsActivity1.class);
+            intent3.putExtra("val",val);
+            startActivity(intent3);
+
+        }else if (id == R.id.nav_manage) {
+            int val=2;
+            Intent intent2=new  Intent(MainActivity.this,MapsActivity1.class);
+            intent2.putExtra("val",val);
+            startActivity(intent2);
+        }
+
+        else if (id == R.id.nav_manage3) {
             fr.signOut();
             finish();
             startActivity(new Intent(MainActivity.this, Main2Activity.class));

@@ -10,32 +10,32 @@
             android:title="Camera" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/mak"
-            android:title="Maps" />
+            android:icon="@drawable/pills"
+            android:title="Hospital" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:icon="@drawable/aud"
+            android:title="Auditoriums" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="ClassRoom Blocks" />
         <item
             android:id="@+id/nav_manage2"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tobeadded" />
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Food and Snacks" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="WashRoom" />
         <item
             android:id="@+id/nav_manage3"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/log"
             android:title="Logout" />
     </group>
 
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
